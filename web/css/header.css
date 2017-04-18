@@ -1,0 +1,440 @@
+header {
+  font-size: 1em;
+  position: relative;
+  height: 95vh;
+}
+/*背景图片固定*/
+.img-position {
+  background-image: url(../img/one.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  font-family: 微软雅黑;
+  text-align: center;
+  margin-top: 120px;
+  opacity: 0;
+  transition: all 1.2s;
+}
+
+/* 指定位置 增加 css 是 块出现动画*/
+
+header
+.the-animation {
+  opacity: 1;
+  margin: 0;
+}
+
+.wrap-out-wz {
+  position: relative;
+  height: 20vh;
+  transition: all 1.2s;
+}
+
+
+.wrap-in-wz {
+  position: absolute;
+   left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.title
+h1 {
+  padding: 20px 0;
+  width: 1000px;
+  font-size: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*主体的样式*/
+.mainbody {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mainbody
+h1 {
+  align-self: flex-start;
+  z-index: 9999;
+}
+
+.left {
+  width: 30vw;
+  opacity: 0;
+}
+
+.right {
+  transition: all 0.8s 0.8s;
+  background: rgb(255, 255, 255);
+  height: 60vh;
+  width: 50vw;
+  position: relative;
+  opacity: 0
+}
+
+.box-shown {
+  box-shadow: 0 0 10px rgb(140, 140, 140);
+}
+
+.mainbody
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainbody
+ul
+li {
+  transition: all 0.8s;
+  border:  2px rgb(159, 159, 159) solid;
+  margin: 25px 10px;;
+  list-style: none;
+  font-size: 3em;
+  line-height: 2.5em;
+  /*padding: 20px 20px;*/
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.mainbody
+ul
+li:hover {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.right
+p {
+  font-size: 1.5em;
+  line-height: 2.5em;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+}
+
+
+.wrap-out-wz
+h1 {
+  font-size: 3em;
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*主体样式2*/
+
+.flex-container-two {
+  text-align: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container-two
+h1 {
+  font-size: 3em;
+  margin: 20px 20px;
+}
+
+.flex-container-two
+p {
+  font-size: 1.5em;
+  margin: 50px 20px;
+}
+
+.flex-iterm-two {
+  transition: all 0.8s;
+  width: 32vw;
+  /*height: 80%;*/
+  margin:0 20px;
+  position: relative;
+  opacity: 0;
+}
+
+.flex-container-two
+.flex-iterm-two:hover {
+  box-shadow: 0 0 10px rgb(189, 189, 189);
+}
+
+
+
+
+
+
+
+/*第四部分*/
+.title-two {
+  height: 80vh;
+  position: relative;
+  text-align: center;
+}
+
+.title-two
+h1{
+  width: 1000px;
+  padding: 25px 0;
+  font-size: 3em;
+}
+
+
+
+
+
+/*最后😑 一部分*/
+
+.last-wrap {
+  margin:0 auto;
+  position: relative;
+}
+
+.last-wrap , img
+ {
+  width: 300px;
+  height: 300px;
+}
+
+img {
+  transition: all  1.2s;
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.last-part
+.last-wrap
+.facade {
+ width: 200px;
+  font-size: 2em;
+  font-weight: 800;
+  padding: 10px 20px;
+  border: 4px rgb(0, 0, 0) solid;
+  z-index: 999;
+  border-radius: 20px;
+  transform: all 0.8s;
+}
+
+.last-part
+.last-wrap
+.facade:hover {
+  opacity: 0;
+}
+
+
+.last-part
+.last-wrap
+.facade:hover + img{
+  opacity: 1;
+  transform: rotateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+.red {
+  color: red;
+}
+
+
+.yellow  {
+  color: yellow;
+}
+
+.green  {
+  color: green;
+}
+
+
+
+
+
+
+/*动画 加 媒体查询*/
+.slideUp-wz {
+  animation: slideUp 0.8s forwards;
+}
+
+.scale-wz {
+  animation: bianda 0.8s forwards;
+}
+
+.slideDown-rotate-wz {
+  animation: slideDown-rotate   0.8s forwards;
+}
+
+.slideUp-rotate-wz {
+  animation: slideUp-rotate 1s 0.8s forwards;
+}
+
+.rotate-Bigger-wz {
+  animation:  rotate-Bigger 2s 0.8s forwards;
+}
+
+@keyframes rotate-Bigger {
+  0% {transform: scale(0.2,0.2);}
+  100% { opacity: 1;}
+}
+
+@keyframes slideUp-rotate {
+  0% {top: 100%;}
+  10%  {transform: rotate(360deg);}
+  100% {top: 0; opacity: 1;  transform: rotate(360deg);}
+}
+
+@keyframes slideDown-rotate {
+  0% {top: -100%;}
+  60% {transform: rotate(360deg);}
+  100% {top: 0; opacity: 1;  transform: rotate(360deg);}
+
+}
+
+@keyframes slideUp {
+  0% { top: 200%; }
+  100%  { top: 50%; opacity: 1;}
+}
+
+@keyframes bianda  {
+  0% {transform: scale(0.2,0.2); }
+  100% {transform: scale(1,1); opacity: 1;}
+}
+
+/* 1024px*/
+@media (max-width: 1024px) {
+.mainbody {
+  flex-direction: column;
+  font-size: 1.4em;
+}
+
+  .mainbody ul {
+    width: 70vw;
+    flex-direction: row;
+  }
+
+.mainbody
+ul
+li
+{
+  width: 200px;
+  height: 200px;
+  line-height: 2.5em;
+}
+
+.mainbody
+.right {
+  width: 80vw;
+}
+
+}
+
+@media (max-width: 1024px)  and  (min-width: 415px){
+.title
+h1,
+.title-two
+h1 {
+    width: 768px;
+    font-size: 3.5em;
+  }
+
+}
+
+@media (max-width:768px) {
+  .wrap-out-wz
+  h1 {
+    font-size: 2.2em;
+  }
+
+  .mainbody {
+    font-size:  1em;
+  }
+
+  .mainbody
+  ul
+  li {
+    height:  150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 415px) {
+.title
+h1,
+.title-two
+h1  {
+    width: 320px;
+    font-size: 2em;
+  }
+
+.wrap-out-wz {
+  font-size: 0.8em;
+}
+
+.wrap-in-wz {
+  width: 320px;
+}
+
+  .mainbody {
+    font-size: 0.5em;
+    height: 65vh;
+}
+
+.mainbody
+ul
+li {
+  width: 50px;
+  height: 50px;
+  line-height: 2em;
+}
+
+.flex-container-two {
+  flex-direction: column;
+  height: auto;
+}
+
+.flex-iterm-two {
+  width: 90vw;
+}
+
+}
