@@ -1,4 +1,4 @@
-# web-explorer-
+﻿# web-explorer-
 ## This web is about the front end as well as our team members  
 
 ### 分工：
@@ -24,13 +24,18 @@ div {
 2. 增加其他页面的基本功能
 3. 进一步熟悉git 的操作.
 
-###  ending
-1. 首页用flexbox 完成布局, 响应式用媒体查询加上flexbox  利用jq 进行监听加上简单的动画
+###  更新index 
+1. 首页用flexbox 完成布局
 
-2. 成员页面运用bootstrap完成响应式和布局
+2. 响应式用媒体查询加上flexbox  利用jq 进行监听加上简单的动画
 
-3. 方法页面 用浮动完成布局  
+3. 然浏览者知道入门需要些什么
 
-4. 成员页面运用bootstrap完成响应式和布局 运用动画库!
+### 更新了method.html
+1. 增加了一个method.html页面
+
+2. 主要是提供了一些学习知识的传送门
+
+3. 实现了响应式布局
 
 *每次推送都写个 md *
