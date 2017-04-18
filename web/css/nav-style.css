@@ -3,12 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
-.clearfix {
-  display: block;
-  clear: both;
-}
-
 .nav-wz
 li {
   list-style: none;
@@ -17,77 +11,32 @@ li {
 
 .nav-wz
 a {
+  color: rgb(255, 255, 255);
   text-decoration: none;
   display: block;
-  padding: 20px 50px;
-  /*transition: all 0.8s;*/
-}
-
-.nav-color{
-  background-color: rgb(170, 170, 170);
+  padding: 12px 40px;
+  width: 80px;
 }
 
 .nav-wz {
+  background:#000;
   text-align: center;
-  font-family: Magneto,华文彩云;
-  font-size: 25px;
+  z-index: 1;
+  font-family:Courier;
+  font-size: 19px;
   position: fixed;
   width: 100%;
   transition: all 1s;
-  margin-top: -60px;
-  z-index: 1;
-  animation: nav-down 1.8s forwards;
-}
-
-@keyframes nav-down {
-  100% {margin-top: 0;}
-}
-
-#a {
-  display: inline-block;
-}
-
-#a a {
-  color: rgb(227, 255, 0);
-}
-
-nav a:hover {
-  text-decoration: none;
 }
 
 .nav-wz
 .nav-container {
-  margin:  0  auto;
+  margin: 0 auto;
 }
 
 .nav-wz
 .nav-list {
-  float: right;
-}
-
-.the-en {
-  color: rgb(255, 255, 255);
-  position: absolute;
-  top: 0;
-  opacity: 0;
-  z-index: -999;
-
-}
-
-.the-ch {
-  color:rgb(255, 255, 255);
-  opacity: 1;
-  top: 0;
-}
-
-.the-ch:hover {
-  transition: all 0.5s;
-  opacity: 0;
-}
-
-.the-ch:hover + .the-en {
-  opacity: 1;
-  transition: all 0.8s 0.2s;
+  display: inline-block;
 }
 
 /*字体图标的外包裹*/
@@ -117,34 +66,10 @@ nav a:hover {
 .the-icon {
   transform: rotate(45deg);
 }
-
-footer {
-  background-color: rgb(98, 98, 98);
-  height: 5vh;
-}
-
-footer::before {
-  content: " ";
-  clear: both;
-  display: block;
-}
-
-footer
-p{
-  font-size: 1.1em;
-  height: 5vh;
-  margin-left: 5vw;
-}
-
-
-
-
-
-
 /*桌面端样式 结束*/
 /*媒体查询*/
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   /*手机端 消去首页..*/
   .nav-wz #none {
     display: none;
@@ -156,10 +81,6 @@ p{
     display: block;
     float:none;
   }
-
-#a {
-  display: none;
-}
 
 .nav-wz
 .nav-container {
