@@ -41,4 +41,7 @@ div {
 ### 更新了works.html
 1. works界面主要介绍了本组成员的作品，运用bootstrap完成响应式，运用了css3动画
 
-*每次推送都写个 md *
+### 更新了members.html
+1. 更新了members.html
+
+
